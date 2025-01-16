@@ -41,8 +41,9 @@ jobs:
           #mkdir /mnt/data
           #cd /mnt/data
           #aria2c $(cat url.txt)
-          git clone --mirror https://gitlab.torproject.org/tpo/applications/tor-browser
-          git clone --mirror https://github.com/guardianproject/orbot
+          git clone https://gitlab.torproject.org/tpo/applications/tor-browser
+          git clone https://github.com/guardianproject/orbot
+          git clone --mirror https://gitlab.torproject.org/tpo/core/tor.git
           echo ----------------
           df -h
       - name: 打包
